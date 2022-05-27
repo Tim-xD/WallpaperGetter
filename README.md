@@ -34,7 +34,7 @@ Some examples:
 ```bash
 python main.py [wallpaper] random # Get random image from r/wallpaper
 python main.py [wallpaper,earthporn,pics] hot # Get hot image from one of the three given subs
-python main.py [wallpaper] new --path ./ --nsfw on # Get image from new post, save is current directory, and allowing nsfw posts
+python main.py [wallpaper] new --path ./ --nsfw on # Get image from new post, save in current directory, and allowing nsfw posts
 
 ```
 
