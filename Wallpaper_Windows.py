@@ -35,12 +35,12 @@ class Reddit:
                 contentType = json[0]["data"]["children"][0]["data"]["post_hint"]
                 rand = True
             except:
-                # Reddit post didn't have a image
+                # Reddit post didn't have an image
                 print("Reddit post was not an image, try with a sub with only images")
                 exit(1)
         
         if contentType != "image":
-            # Reddit post didn't have a image
+            # Reddit post didn't have an image
             print("Reddit post was not an image, try with a sub with only images")
             exit(1)
 
@@ -100,7 +100,7 @@ def GetImage(resp: bytes, path: str) -> str:
     try:
         img = Image.open(BytesIO(GetRequest(url)))
     except Exception as e:
-        # Reddit post didn't have a image
+        # Reddit post didn't have an image
         print(e)
         exit(1)
 
