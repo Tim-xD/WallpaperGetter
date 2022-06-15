@@ -40,10 +40,22 @@ python main.py [wallpaper] new --path ./ --nsfw on # Get image from new post, sa
 
 ### Windows
 
-On windows, the python script automatically changes your background, however, an absolute path must be provided to the program (``C:\ ...``).
+On windows, the python script automatically changes your background, however, an absolute path must be provided to the program (``C:\...``, using `\` as separators).
 
 If you want to change wallpaper on Windows startup, follow this guide: https://stackoverflow.com/questions/51622702/windows-10-run-python-program-in-startup
 
 ### Linux
 
 The script returns the path where the image is saved, so you can change your wallpaper by giving it to your wallpaper manager.
+
+For example if you're using feh:
+
+```bash
+feh --bg-scale $(python WallpaperGetter_Linux.py [earthporn] hot --path ~/Pictures)
+```
+
+If you're using ZSH, you may want to escape the brackets:
+
+```bash
+feh --bg-scale $(python WallpaperGetter_Linux.py \[pics] random)
+```
