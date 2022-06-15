@@ -7,7 +7,7 @@ It allows the user to easily fetch an image from Reddit and save it to make it a
 
 ## Installation
 
-Download the python file and install some python libraries using this command :
+Download the python file and install some python libraries using this command:
 ```bash
 pip install argparse user_agent
 ```
